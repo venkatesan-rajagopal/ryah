@@ -91,19 +91,20 @@ export const Desktop = (): JSX.Element => {
     }
   };
   return (
-    <div className="bg-white w-full min-h-screen flex items-center justify-center overflow-x-hidden">
-      <div className="min-h-screen w-full max-w-[1440px] flex items-center justify-center relative overflow-hidden py-8 md:py-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/videos/property-tour.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-[rgba(155,112,95,0.7)]"></div>
-        <div className="flex w-full max-w-[1140px] px-4 md:px-8 flex-col items-center gap-8 md:gap-[60px] relative z-10">
+    <div className="bg-white w-full min-h-screen flex items-center justify-center overflow-x-hidden relative">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="fixed inset-0 w-full h-full object-cover"
+      >
+        <source src="/videos/property-tour.mp4" type="video/mp4" />
+      </video>
+      <div className="fixed inset-0 bg-[rgba(155,112,95,0.7)]"></div>
+      
+      <div className="min-h-screen w-full flex items-center justify-center relative z-10 py-8 md:py-0">
+        <div className="flex w-full max-w-[1140px] px-4 md:px-8 flex-col items-center gap-8 md:gap-[60px]">
           <img
             className="w-32 h-auto md:w-48 md:h-[178px]"
             alt="White"
