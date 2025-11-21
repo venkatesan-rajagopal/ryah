@@ -10,7 +10,7 @@ export const FloorplansViewer = (): JSX.Element => {
   };
 
   return (
-    <div className="bg-[#F6E3C5] w-full min-w-[1440px] min-h-screen relative">
+    <div className="bg-[#F6E3C5] w-full min-h-screen relative overflow-x-hidden">
       <Button
         onClick={handleBack}
         data-testid="back-button"
@@ -22,7 +22,7 @@ export const FloorplansViewer = (): JSX.Element => {
       </Button>
 
       <div className="flex flex-col items-center justify-center w-full min-h-screen py-24">
-        <div className="max-w-7xl w-full px-8">
+        <div className="max-w-7xl w-full px-4 md:px-8">
           <img
             src="/floorplans/floor-layout.png"
             alt="Floor Layout 2nd to 6th Floor"
