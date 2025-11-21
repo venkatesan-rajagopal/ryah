@@ -92,7 +92,7 @@ export const Desktop = (): JSX.Element => {
   };
   return (
     <div className="bg-white w-full min-h-screen flex items-center justify-center overflow-x-hidden">
-      <div className="min-h-[900px] w-full max-w-[1440px] flex items-center justify-center relative overflow-hidden">
+      <div className="min-h-screen w-full max-w-[1440px] flex items-center justify-center relative overflow-hidden py-8 md:py-0">
         <video
           autoPlay
           loop
@@ -103,15 +103,15 @@ export const Desktop = (): JSX.Element => {
           <source src="/videos/property-tour.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-[rgba(155,112,95,0.7)]"></div>
-        <div className="flex h-[712px] w-[1140px] flex-col items-center gap-[60px] relative z-10">
+        <div className="flex w-full max-w-[1140px] px-4 md:px-8 flex-col items-center gap-8 md:gap-[60px] relative z-10">
           <img
-            className="w-48 h-[178px]"
+            className="w-32 h-auto md:w-48 md:h-[178px]"
             alt="White"
             src="/figmaAssets/white.png"
           />
 
-          <div className="flex flex-col items-start gap-[18px] w-full">
-            <div className="grid grid-cols-3 gap-[18px] w-full">
+          <div className="flex flex-col items-start gap-4 md:gap-[18px] w-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-[18px] w-full">
               {cardData.slice(0, 3).map((card) => (
                 <div
                   key={card.id}
@@ -156,7 +156,7 @@ export const Desktop = (): JSX.Element => {
               ))}
             </div>
 
-            <div className="grid grid-cols-4 gap-[18px] w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-[18px] w-full">
               {cardData.slice(3, 7).map((card) => (
                 <div
                   key={card.id}
