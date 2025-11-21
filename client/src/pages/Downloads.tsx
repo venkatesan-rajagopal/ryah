@@ -66,19 +66,19 @@ export const Downloads = (): JSX.Element => {
   };
 
   return (
-    <div className="bg-[#F6E3C5] w-full min-w-[1440px] min-h-screen relative">
+    <div className="bg-[#F6E3C5] w-full min-h-screen relative overflow-x-hidden">
       <Button
         onClick={handleBack}
         data-testid="back-button"
         variant="default"
-        className="absolute top-10 left-16 bg-[#9b705f] text-white h-10 rounded-[14px] px-6 uppercase font-bold text-base border border-black/8 z-20 hover:bg-[#8a6453]"
+        className="absolute top-10 left-10 bg-[#9b705f] text-white h-10 rounded-[14px] px-6 uppercase font-bold text-base border border-black/8 z-20 hover:bg-[#8a6453]"
       >
         <ArrowLeft className="w-5 h-5 mr-2" />
         Back
       </Button>
 
-      <div className="flex items-center justify-center min-h-screen py-24 px-16">
-        <div className="grid grid-cols-2 gap-6 max-w-6xl w-full">
+      <div className="flex items-center justify-center min-h-screen py-24 px-4 md:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full">
           {downloadItems.map((item) => (
             <div
               key={item.id}
