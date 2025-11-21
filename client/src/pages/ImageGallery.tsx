@@ -6,13 +6,13 @@ import { ImageViewer } from "@/components/ImageViewer";
 
 const exteriorImages = [
   "/figmaAssets/frame-2.png",
-  "/figmaAssets/frame-2-1.png",
-  "/figmaAssets/frame-6.png",
+  "/figmaAssets/brochure-thumb.webp",
+  "/figmaAssets/floorplans-thumb.webp",
 ];
 
 const interiorImages = [
   "/figmaAssets/frame-4.png",
-  "/figmaAssets/frame-5-1.png",
+  "/figmaAssets/factsheet-thumb.webp",
   "/figmaAssets/frame-7.png",
 ];
 
@@ -38,19 +38,19 @@ const galleryImages = [
   {
     id: 4,
     title: "BROCHURE",
-    image: "/figmaAssets/frame-2-1.png",
+    image: "/figmaAssets/brochure-thumb.webp",
     category: "exterior" as const,
   },
   {
     id: 5,
     title: "FACTSHEET",
-    image: "/figmaAssets/frame-5-1.png",
+    image: "/figmaAssets/factsheet-thumb.webp",
     category: "interior" as const,
   },
   {
     id: 6,
     title: "FLOORPLANS",
-    image: "/figmaAssets/frame-6.png",
+    image: "/figmaAssets/floorplans-thumb.webp",
     category: "exterior" as const,
   },
   {
