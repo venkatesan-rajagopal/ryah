@@ -128,7 +128,7 @@ export const ImageGallery = (): JSX.Element => {
   };
 
   return (
-    <div className="bg-[#f6e3c5] w-full min-w-[1440px] min-h-[900px] flex items-center justify-center relative">
+    <div className="bg-[#f6e3c5] w-full min-h-screen flex items-center justify-center relative overflow-x-hidden">
       <Button
         onClick={handleBack}
         data-testid="back-button"
@@ -139,7 +139,7 @@ export const ImageGallery = (): JSX.Element => {
         Back
       </Button>
 
-      <div className="relative w-full max-w-[1200px] px-4">
+      <div className="relative w-full max-w-[1200px] px-4 md:px-8">
         {canScrollLeft && (
           <Button
             onClick={() => scroll("left")}
