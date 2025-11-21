@@ -32,7 +32,7 @@ const galleryImages = [
   {
     id: 3,
     title: "LOCATION",
-    image: "/figmaAssets/frame-5.png",
+    image: "/figmaAssets/location-map.webp",
     category: "other" as const,
   },
   {
@@ -175,7 +175,8 @@ export const ImageGallery = (): JSX.Element => {
             <div
               key={item.id}
               data-testid={`gallery-image-${item.id}`}
-              className="relative flex-shrink-0 h-full w-[550px] rounded-2xl overflow-hidden shadow-[0px_0px_16px_4px_rgba(0,0,0,0.16)] snap-center"
+              onClick={() => handleExpand(item.image, item.category)}
+              className="relative flex-shrink-0 h-full w-[550px] md:w-[550px] rounded-2xl overflow-hidden shadow-[0px_0px_16px_4px_rgba(0,0,0,0.16)] snap-center cursor-pointer"
             >
               <img
                 src={item.image}
@@ -189,20 +190,26 @@ export const ImageGallery = (): JSX.Element => {
                   </p>
                   <div className="flex items-center gap-4">
                     <Button
-                      onClick={() => handleDownload(item.image, item.title)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDownload(item.image, item.title);
+                      }}
                       data-testid={`download-${item.id}`}
                       variant="ghost"
                       size="icon"
-                      className="rounded-full bg-white/20 backdrop-blur-sm"
+                      className="rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/40"
                     >
                       <Download className="w-5 h-5 text-white" />
                     </Button>
                     <Button
-                      onClick={() => handleExpand(item.image, item.category)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleExpand(item.image, item.category);
+                      }}
                       data-testid={`expand-${item.id}`}
                       variant="ghost"
                       size="icon"
-                      className="rounded-full bg-white/20 backdrop-blur-sm"
+                      className="rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/40"
                     >
                       <Maximize2 className="w-5 h-5 text-white" />
                     </Button>
