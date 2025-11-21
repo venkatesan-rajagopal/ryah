@@ -45,7 +45,7 @@ const cardData: CardType[] = [
   {
     id: 4,
     title: "BROCHURE",
-    backgroundImage: "/figmaAssets/frame-2-1.png",
+    backgroundImage: "/figmaAssets/brochure-thumb.webp",
     backgroundGradient:
       "linear-gradient(0deg,rgba(108,103,71,1)_0%,rgba(108,103,71,1)_100%)",
     type: "document",
@@ -54,7 +54,7 @@ const cardData: CardType[] = [
   {
     id: 5,
     title: "FACTSHEET",
-    backgroundImage: "/figmaAssets/frame-5-1.png",
+    backgroundImage: "/figmaAssets/factsheet-thumb.webp",
     backgroundGradient:
       "linear-gradient(0deg,rgba(108,103,71,1)_0%,rgba(108,103,71,1)_100%)",
     type: "document",
@@ -63,7 +63,7 @@ const cardData: CardType[] = [
   {
     id: 6,
     title: "FLOORPLANS",
-    backgroundImage: "/figmaAssets/frame-6.png",
+    backgroundImage: "/figmaAssets/floorplans-thumb.webp",
     backgroundGradient:
       "linear-gradient(0deg,rgba(108,103,71,1)_0%,rgba(108,103,71,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)",
     type: "document",
