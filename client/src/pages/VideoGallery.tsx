@@ -25,12 +25,12 @@ export const VideoGallery = (): JSX.Element => {
   };
 
   return (
-    <div className="bg-black w-full min-w-[1440px] h-[900px] flex items-center justify-center relative overflow-hidden">
+    <div className="bg-black w-full min-h-screen flex items-center justify-center relative overflow-x-hidden">
       <Button
         onClick={handleBack}
         data-testid="back-button"
         variant="default"
-        className="absolute top-10 left-10 bg-[#9b705f] text-white h-10 rounded-[14px] px-6 uppercase font-bold text-base border border-black/8 z-20"
+        className="absolute top-4 left-4 md:top-10 md:left-10 bg-[#9b705f] text-white h-10 rounded-[14px] px-4 md:px-6 uppercase font-bold text-sm md:text-base border border-black/8 z-20"
       >
         <ArrowLeft className="w-5 h-5" />
         Back
