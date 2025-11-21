@@ -91,8 +91,8 @@ export const Desktop = (): JSX.Element => {
     }
   };
   return (
-    <div className="bg-white w-full min-w-[1440px] min-h-[900px] flex items-center justify-center">
-      <div className="h-[900px] w-[1440px] flex items-center justify-center relative overflow-hidden">
+    <div className="bg-white w-full min-h-screen flex items-center justify-center overflow-x-hidden">
+      <div className="min-h-[900px] w-full max-w-[1440px] flex items-center justify-center relative overflow-hidden">
         <video
           autoPlay
           loop
