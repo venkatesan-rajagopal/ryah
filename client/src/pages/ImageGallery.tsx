@@ -11,9 +11,14 @@ const exteriorImages = [
 ];
 
 const interiorImages = [
-  "/figmaAssets/frame-4.png",
-  "/figmaAssets/factsheet-thumb.webp",
-  "/figmaAssets/frame-7.png",
+  "/figmaAssets/interior-1.webp",
+  "/figmaAssets/interior-2.webp",
+  "/figmaAssets/interior-3.webp",
+  "/figmaAssets/interior-4.webp",
+  "/figmaAssets/interior-5.webp",
+  "/figmaAssets/interior-6.webp",
+  "/figmaAssets/interior-7.webp",
+  "/figmaAssets/interior-8.webp",
 ];
 
 const galleryImages = [
@@ -26,7 +31,7 @@ const galleryImages = [
   {
     id: 2,
     title: "INTERIOR",
-    image: "/figmaAssets/frame-4.png",
+    image: "/figmaAssets/interior-1.webp",
     category: "interior" as const,
   },
 ];
