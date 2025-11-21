@@ -24,7 +24,7 @@ export const LocationMap = (): JSX.Element => {
       <div className="w-full max-w-[1200px] mx-auto px-4 md:px-10" data-testid="location-map-container">
         <div className="w-full rounded-2xl overflow-hidden shadow-[0px_0px_16px_4px_rgba(0,0,0,0.16)]">
           <img
-            src="/figmaAssets/frame-5.png"
+            src="/figmaAssets/location-map.webp"
             alt="Ryah Living Location Map - Dubai Studio City"
             className="w-full h-auto object-contain"
             data-testid="location-map-image"
