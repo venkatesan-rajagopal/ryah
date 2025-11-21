@@ -5,9 +5,8 @@ import { Button } from "@/components/ui/button";
 import { ImageViewer } from "@/components/ImageViewer";
 
 const exteriorImages = [
-  "/figmaAssets/frame-2.png",
-  "/figmaAssets/brochure-thumb.webp",
-  "/figmaAssets/floorplans-thumb.webp",
+  "/figmaAssets/exterior-1.webp",
+  "/figmaAssets/exterior-2.webp",
 ];
 
 const interiorImages = [
@@ -25,7 +24,7 @@ const galleryImages = [
   {
     id: 1,
     title: "EXTERIOR",
-    image: "/figmaAssets/frame-2.png",
+    image: "/figmaAssets/exterior-1.webp",
     category: "exterior" as const,
   },
   {
