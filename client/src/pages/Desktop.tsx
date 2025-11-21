@@ -36,7 +36,7 @@ const cardData: CardType[] = [
   {
     id: 3,
     title: "LOCATION MAP",
-    backgroundImage: "/figmaAssets/frame-5.png",
+    backgroundImage: "/figmaAssets/location-map.webp",
     backgroundGradient:
       "linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)",
     type: "map",
