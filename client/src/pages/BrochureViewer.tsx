@@ -14,7 +14,7 @@ export const BrochureViewer = (): JSX.Element => {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   return (
-    <div className="bg-black w-full min-w-[1440px] min-h-screen relative">
+    <div className="bg-black w-full min-h-screen relative overflow-x-hidden">
       <Button
         onClick={handleBack}
         data-testid="back-button"
@@ -25,7 +25,7 @@ export const BrochureViewer = (): JSX.Element => {
         Back
       </Button>
 
-      <div className="flex flex-col items-center w-full py-24 overflow-y-auto">
+      <div className="flex flex-col items-center w-full py-24 px-4 overflow-y-auto">
         {pages.map((pageNum) => {
           const pageNumber = pageNum.toString().padStart(2, "0");
           return (
